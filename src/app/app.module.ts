@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+/* Agregados por mí */
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './register/register.component';
@@ -10,6 +12,8 @@ import { SearchComponent } from './search/search.component';
 import { FilterComponent } from './filter/filter.component';
 import { HomeComponent } from './home/home.component';
 import { DetailComponent } from './detail/detail.component';
+import { PipesPipe } from './pipes/title.pipe';
+import { OrderAspectPipe } from './pipes/order-aspect.pipe';
 
 @NgModule({
   declarations: [
@@ -19,12 +23,15 @@ import { DetailComponent } from './detail/detail.component';
     SearchComponent,
     FilterComponent,
     HomeComponent,
-    DetailComponent
+    DetailComponent,
+    PipesPipe,
+    OrderAspectPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

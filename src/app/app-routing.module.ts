@@ -13,9 +13,10 @@ const routes: Routes = [
   { path: '', component: HomeComponent }, 
   { path: 'search', component: SearchComponent },
   { path: 'filter', component: FilterComponent },
-  { path: 'bim/:id', component: DetailComponent },
+  { path: 'detail/:id', component: DetailComponent },
   { path: 'register', component: RegisterComponent }, 
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
+  { path: '**', pathMatch:'full', redirectTo:'' }   //Redirecciona a la home si no encuentra la ruta
 ];
 
 @NgModule({
@@ -23,3 +24,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+

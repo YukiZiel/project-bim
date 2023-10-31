@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'proyect-bim';
+title = 'Proyect BIM';
+  // data: any[] = [];
+
+  // constructor(
+  //   private http: HttpClient
+  // ) {}
+
+  // ngOnInit() {
+  //   this.http.get('https://api.itec.cat/bim/filters/ca')
+  //   .subscribe((data:any) => {
+  //     this.data = data;
+  //   })
+  // }
 }
