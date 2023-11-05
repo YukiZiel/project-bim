@@ -13,8 +13,8 @@ export class DetailComponent implements OnInit {
   constructor( private route:ActivatedRoute, public bimService:BimobjectService) {
     route.params.subscribe(data => {
       bimService.detail( data['id'])
-      .subscribe(ans => {
-        this.detail = ans;
+      .subscribe(response => {
+        this.detail = response;
         console.log(this.detail);
       });
     });

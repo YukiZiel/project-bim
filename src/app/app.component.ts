@@ -8,16 +8,5 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent {
 title = 'Proyect BIM';
-  // data: any[] = [];
 
-  // constructor(
-  //   private http: HttpClient
-  // ) {}
-
-  // ngOnInit() {
-  //   this.http.get('https://api.itec.cat/bim/filters/ca')
-  //   .subscribe((data:any) => {
-  //     this.data = data;
-  //   })
-  // }
 }

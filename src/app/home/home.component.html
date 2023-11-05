@@ -1,0 +1,19 @@
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row">      
+        <div class="card mb-3 espacio" style="max-width: 540px;" *ngFor="let info of bimService.bimObjects">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img [src]="'https://bedec.itec.cat/img/1639958/' + info.image" class="card-img" alt="{{info.description}}">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"> {{info.description}} </h5>
+                <p><button type="button" [routerLink]="['/detail', info.id]" class="btn btn-primary btn-sm">Details</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
