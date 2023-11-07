@@ -13,8 +13,11 @@ import { FilterComponent } from './filter/filter.component';
 import { HomeComponent } from './home/home.component';
 import { DetailComponent } from './detail/detail.component';
 import { PipesPipe } from './pipes/title.pipe';
-import { OrderAspectPipe } from './pipes/order-aspect.pipe';
+import { OrderAspectPipe } from './pipes/order-bim.pipe';
+import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list'; 
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { MatButtonModule } from '@angular/material/button';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule,
+    MatGridListModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,8 +1,15 @@
-
-<div class="form-signin">
-    <img class="mb-4" [src]="'https://bedec.itec.cat/img/1639958/' + detail.image" alt="{{detail.descrip}}" width="300" height="420">
-    <h4>{{detail.descrip}}</h4>
-    <!-- <h4 class="h4 mb-3 font-weight-normal">Descargas {{detail.downloads.format}}</h4> -->
-
-    <button class="btn btn-lg btn-primary btn-block" [routerLink]="['/home']" type="submit">Return</button>
-</div>
+<mat-card class="container">   
+    <mat-card-content class="detail-content">
+        <mat-card-title class="detail-title">{{detail[0].descrip}}</mat-card-title>
+        <img mat-card-image class="detail-img" [src]="'https://bedec.itec.cat/img/1639958/' + detail[0].image[0]" alt="{{detail.descrip}}" width="300" height="420">
+        <div class="detail-downloads">
+            <h4>Descargas</h4>
+            <ul class="detail-downloads-list" *ngFor="let elements of detail[0].downloads">
+                <li>{{elements.format}}</li>
+            </ul>
+        </div>
+        <mat-card-actions>
+            <button mat-raised-button color="primary" class="button" [routerLink]="['/home']" type="button">Volver</button>
+        </mat-card-actions>
+    </mat-card-content>
+</mat-card> 

@@ -1,20 +1,22 @@
   
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+.container {
+  display: block;
+  height: 100%;
+  margin-top: 5%;
 }
 
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
+.cards {
+    max-width: 100%;
+    display: contents;
+
 }
 
-.espacio {
-    margin-right: 10px;
+.card {
+    max-width: 250px;
+    margin-bottom: 20px;
+    margin-inline: auto;
 }
-    
+
+.card-img {
+    max-width: 100%;
+}

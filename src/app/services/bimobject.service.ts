@@ -13,7 +13,7 @@ bimObjects: any[] = [];
   }
 
   detail(id:string) {
-    return this.http.get(`https://api.itec.cat/bim//bim/1639958/es/${id}`)
+    return this.http.get(`https://api.itec.cat/bim/bim/1639958/es/${id}`)
   }
 
   loadObjects() {

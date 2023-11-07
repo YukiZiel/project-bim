@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
+  name!: string;
+  nameCompany!: string;
+  email!: string;
+  password!: string;
 
+  constructor() {}
+
+  register() {
+
+  }
 }
