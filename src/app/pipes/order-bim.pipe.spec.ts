@@ -1,6 +1,6 @@
 import { OrderBimPipe } from './order-bim.pipe';
 
-describe('OrderAspectPipe', () => {
+describe('OrderBimPipe', () => {
   it('create an instance', () => {
     const pipe = new OrderBimPipe();
     expect(pipe).toBeTruthy();
