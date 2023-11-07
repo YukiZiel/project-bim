@@ -10,8 +10,10 @@ import { Home } from '../interfaces/home';
 })
 
 export class HomeComponent implements OnInit {
-constructor( public bimService: BimobjectService) {
-    console.log('I am in home');
+
+  searchforName = '';
+  constructor( public bimService: BimobjectService) {
+      console.log('I am in home');
   }
 
  ngOnInit(): void {

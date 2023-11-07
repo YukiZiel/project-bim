@@ -24,6 +24,15 @@ bimObjects: any[] = [];
         console.log(this.bimObjects);
       });
   }
+
+  loadManufacturers() {
+
+    this.http.get<any>('https://api.itec.cat/bim/filters/manufacturers')
+  }
+
+  // search(query:string): Observable<any[]> {
+  //   return this.http.get<any[]>(`https://api.itec.cat/bim/search/${query}`)
+  // }
 }
 
   // loadObjects() {
