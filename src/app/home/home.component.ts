@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
 
   searchforName = '';
   constructor( public bimService: BimobjectService) {
-      console.log('I am in home');
+
   }
 
  ngOnInit(): void {
