@@ -5,11 +5,11 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class SearchNamePipe implements PipeTransform {
 
-  transform(value: any, arg: any): any {
+  transform(value: any, arg: string): any {
     const searchforname = [];
-    for( const recorrido of value){
-      if (recorrido.description.toLowerCase().indexOf(arg.toLowerCase()) > -1 ){
-        searchforname.push(recorrido);
+    for( const route of value){
+      if (route.description.toLowerCase().indexOf(arg.toLowerCase()) > -1 ){
+        searchforname.push(route);
       }
     }
     return searchforname;
