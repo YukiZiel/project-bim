@@ -8,7 +8,5 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent {
   title = 'Proyect BIM';
-  // search(){
-  //   this.results = this.servicioDeBusqueda.search(this.query);
-  // }
+
 }
