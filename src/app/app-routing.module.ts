@@ -8,6 +8,7 @@ import { DetailComponent } from './detail/detail.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { filter } from 'rxjs';
+import { HomeManufactComponent } from './home-manufact/home-manufact.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent }, 
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'detail/:id', component: DetailComponent },
   { path: 'register', component: RegisterComponent }, 
   { path: 'login', component: LoginComponent },
+  { path: 'manufacturers', component:HomeManufactComponent},
   { path: '**', pathMatch:'full', redirectTo:'' }   //Redirecciona a la home si no encuentra la ruta
 ];
 

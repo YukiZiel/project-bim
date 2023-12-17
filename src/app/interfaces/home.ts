@@ -6,5 +6,4 @@ export interface Home {
     llicencia: string,
     dataEmissio: Date,
     ecob: boolean
-
 }

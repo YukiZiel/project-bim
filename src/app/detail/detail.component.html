@@ -5,7 +5,13 @@
         <div class="detail-downloads">
             <h4>Descargas</h4>
             <ul class="detail-downloads-list" *ngFor="let elements of detail[0].downloads">
-                <li>{{elements.format}}</li>
+                <li>{{elements.format}}
+                    <ul>     
+                        <li *ngFor="let formatItem of elements.formatdown">
+                            {{formatItem.format}}
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <mat-card-actions>
